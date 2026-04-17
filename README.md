@@ -4,11 +4,11 @@
 
 ###
 
-<img align="right" height="120" src="https://media1.tenor.com/m/WHOwHxdVSQIAAAAC/capoo-capoo-type.gif"  />
+<h1 align="left">Hi 👋! I'm Manaswin</h1>
 
 ###
 
-<h1 align="left">Hi 👋! I'm Manaswin</h1>
+<img align="right" height="120" src="https://media1.tenor.com/m/WHOwHxdVSQIAAAAC/capoo-capoo-type.gif"  />
 
 ###
 
