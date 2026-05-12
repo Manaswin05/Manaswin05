@@ -16,7 +16,7 @@
 
 ###
 
-<h5 align="left">For application development I use :</h5>
+<h5 align="left">For web application development I use :</h5>
 
 ###
 
