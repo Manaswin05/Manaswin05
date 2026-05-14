@@ -1,4 +1,9 @@
+<!-- Text Animation -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=3000&pause=1000&color=5BCDEC&vCenter=true&repeat=true&width=500&height=60&lines=Passionate+Developer+%F0%9F%92%BB;Open+Source+Enthusiast+%F0%9F%9A%80;Always+Learning+New+Things+%F0%9F%93%9A;Building+Cool+Projects+%E2%9C%A8" alt="Typing SVG" />
+</p>
 
+---
 
 <!-- GitHub Metrics -->
 <p align="center">
