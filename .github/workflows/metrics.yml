@@ -95,3 +95,26 @@ jobs:
           plugin_habits_charts: yes
           plugin_habits_days: 14
           plugin_habits_from: 200
+
+      # ── 8. Streak Stats (self-hosted) ──────────────────────────────
+      - name: Streak Stats
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.streak.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_habits: yes
+          plugin_habits_facts: no
+          plugin_habits_charts: no
+          plugin_habits_trim: yes
+          config_display: large
+
+      # ── 9. Contribution Calendar (self-hosted) ──────────────────────
+      - name: Contribution Calendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.calendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_calendar: yes
+          plugin_calendar_limit: 0
