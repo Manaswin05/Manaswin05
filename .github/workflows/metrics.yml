@@ -49,16 +49,17 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, activity, community, repositories, metadata
 
-      # ── 4. Achievements ─────────────────────────────────────────────
-      - name: Achievements
+      # ── 4. Commit Activity Graph ────────────────────────────────────
+      - name: Activity Graph
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.achievements.svg
+          filename: metrics.activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: C
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: all
 
       # ── 5. Starred topics ───────────────────────────────────────────
       - name: Topics
@@ -81,3 +82,16 @@ jobs:
           plugin_notable: yes
           plugin_notable_from: all
           plugin_notable_types: commit, pull_request, issue
+
+      # ── 7. Commit Habits (detailed activity) ────────────────────────
+      - name: Commit Habits
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.habits.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_days: 14
+          plugin_habits_from: 200
