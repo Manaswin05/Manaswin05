@@ -17,15 +17,13 @@
 </p>
 
 ---
-<!--Trphoies -->
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Manaswin05&theme=react-dark&hide_border=true&area=true" alt="Contribution Graph" width="100%" />
-</p>
-<!-- Contribution Graph -->
-<p align="center">
-  <img src="https://github-trophies.vercel.app/?username=Manaswin05&theme=react-dark&hide_border=true&area=true" alt="Contribution Graph" width="100%" />
-</p>
 <!-- GitHub Streak Stats -->
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Manaswin05&theme=dark&hide_border=true&background=0D1117&stroke=0D1117&ring=5BCDEC&fire=5BCDEC&currStreakLabel=5BCDEC" alt="GitHub Streak Stats" />
+</p>
+
+---
+<!-- Throphies Graph -->
+<p align="center">
+  <img src="https://github-trophies.vercel.app/?username=Manaswin05&theme=react-dark&hide_border=true&area=true" alt="Contribution Graph" width="50%" />
 </p>
