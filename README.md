@@ -24,5 +24,5 @@
 
 <!-- GitHub Streak Stats -->
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Manaswin05&theme=dark&hide_border=true&background=0D1117&stroke=0D1117&ring=5BCDEC&fire=5BCDEC&currStreakLabel=5BCDEC" alt="GitHub Streak Stats" />
+  <img src="https://streak-stats.demolab.com?user=Manaswin05&theme=dark&hide_border=true&background=0D1117&stroke=0D1117&ring=5BCDEC&fire=5BCDEC&currStreakLabel=5BCDEC" alt="GitHub Streak Stats" />
 </p>
