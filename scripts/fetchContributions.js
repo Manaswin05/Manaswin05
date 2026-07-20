@@ -57,7 +57,28 @@ async function fetchContributions(userName) {
             if (parsed.errors) {
               reject(new Error(JSON.stringify(parsed.errors)));
             } else {
-              resolve(parsed.data.user.contributionsCollection.contributionCalendar);
+              const calendar = parsed.data.user.contributionsCollection.contributionCalendar;
+              
+              // Filter to last 6 months (approximately 26 weeks)
+              const sixMonthsAgo = new Date();
+              sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+              
+              const filteredWeeks = calendar.weeks.filter(week => {
+                if (week.contributionDays.length === 0) return false;
+                const weekDate = new Date(week.contributionDays[0].date);
+                return weekDate >= sixMonthsAgo;
+              });
+              
+              // Recalculate total contributions for the filtered period
+              const totalContributions = filteredWeeks.reduce((sum, week) => {
+                return sum + week.contributionDays.reduce((daySum, day) => daySum + day.contributionCount, 0);
+              }, 0);
+              
+              resolve({
+                ...calendar,
+                weeks: filteredWeeks,
+                totalContributions: totalContributions
+              });
             }
           } catch (e) {
             reject(e);

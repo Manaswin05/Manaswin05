@@ -149,7 +149,7 @@ function renderSVG(calendar) {
   svg += `<text x="${legendX + 130}" y="${footerY}" class="text-legend">More activity</text>`;
 
   // Extra info text
-  svg += `<text x="${startX}" y="${footerY + 45}" class="text-legend">Each building represents a week. Each window represents a day.</text>`;
+  svg += `<text x="${startX}" y="${footerY + 45}" class="text-legend">Each building represents a week (6 months). Each window represents a day.</text>`;
   svg += `<text x="${startX}" y="${footerY + 58}" class="text-legend">The brighter the window, the more commits that day.</text>`;
 
   const now = new Date();
