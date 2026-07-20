@@ -2,12 +2,8 @@ name: Build Coding City
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 1 * * *" # Runs daily at 1 AM to avoid conflict with metrics action
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - city-feature
 
 jobs:
   build:
