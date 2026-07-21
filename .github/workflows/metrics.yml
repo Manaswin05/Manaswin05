@@ -17,21 +17,19 @@ jobs:
         with:
           fetch-depth: 0
 
-      # ── 1. Base stats + isometric calendar ──────────────────────────
-      - name: Isometric Calendar
+      - name: Base Stats
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.isocalendar.svg
+          filename: metrics.base.svg
+          user: Manaswin05
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          base: header, activity, community, repositories, metadata
 
-      # ── 2. Languages breakdown ───────────────────────────────────────
       - name: Languages
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.languages.svg
+          user: Manaswin05
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_languages: yes
@@ -41,19 +39,21 @@ jobs:
           plugin_languages_details: lines, percentage
           plugin_languages_sections: most-used
 
-      # ── 3. GitHub stats (base section) ──────────────────────────────
-      - name: Base Stats
+      - name: Isometric Calendar
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.base.svg
+          filename: metrics.isocalendar.svg
+          user: Manaswin05
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, activity, community, repositories, metadata
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
 
-      # ── 4. Commit Activity Graph ────────────────────────────────────
       - name: Activity Graph
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.activity.svg
+          user: Manaswin05
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_activity: yes
@@ -61,63 +61,27 @@ jobs:
           plugin_activity_days: 14
           plugin_activity_filter: all
 
-      # ── 5. Starred topics ───────────────────────────────────────────
       - name: Topics
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.topics.svg
+          user: Manaswin05
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_topics: yes
           plugin_topics_limit: 15
-          plugin_topics_mode: icons   # shows logos instead of text
+          plugin_topics_mode: icons
 
-      # ── 6. Notable contributions ────────────────────────────────────
       - name: Notable Contributions
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.notable.svg
+          user: Manaswin05
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_notable: yes
           plugin_notable_from: all
           plugin_notable_types: commit, pull_request, issue
-
-      # ── 7. Commit Habits (detailed activity) ────────────────────────
-      - name: Commit Habits
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.habits.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-          plugin_habits_days: 14
-          plugin_habits_from: 200
-
-      # ── 8. Streak Stats (self-hosted) ──────────────────────────────
-      - name: Streak Stats
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.streak.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_habits: yes
-          plugin_habits_facts: no
-          plugin_habits_charts: no
-          plugin_habits_trim: yes
-          config_display: large
-
-      # ── 9. Contribution Calendar (self-hosted) ──────────────────────
-      - name: Contribution Calendar
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.calendar.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_calendar: yes
-          plugin_calendar_limit: 0
 
       - name: Commit and push changes
         run: |
