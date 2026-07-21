@@ -5,6 +5,18 @@
 
 ---
 
+# 🏙️ My Coding City
+
+<p align="center">
+  <img src="./assets/city/skyline.svg" width="100%" alt="GitHub Coding City"/>
+</p>
+
+<p align="center">
+A city that grows with every contribution.
+</p>
+
+---
+
 <!-- GitHub Metrics -->
 <p align="center">
   <img src="./metrics.base.svg" width="49%" />
@@ -25,16 +37,4 @@
 <!-- GitHub Streak Stats -->
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=Manaswin05&theme=dark&hide_border=true&background=0D1117&stroke=0D1117&ring=5BCDEC&fire=5BCDEC&currStreakLabel=5BCDEC" alt="GitHub Streak Stats" />
-</p>
-
----
-
-# 🏙️ My Coding City
-
-<p align="center">
-  <img src="./assets/city/skyline.svg" width="100%" alt="GitHub Coding City"/>
-</p>
-
-<p align="center">
-A city that grows with every contribution.
 </p>
