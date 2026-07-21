@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B1021" />
+      <stop offset="100%" stop-color="#2a1b38" />
+    </linearGradient>
+    <linearGradient id="building" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#181329" />
+      <stop offset="100%" stop-color="#0a0812" />
+    </linearGradient>
+    <style>
+      .text-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #E1E4E8; }
+      .text-subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 12px; fill: #8B949E; }
+      .text-legend { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 10px; fill: #8B949E; }
+      .live-tag { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 10px; font-weight: bold; fill: #238636; }
+    </style>
+  </defs>
+  
+  <rect width="1000" height="400" fill="url(#sky)" />
+  <rect x="0" y="280" width="1000" height="120" fill="#0D1117" />
+  <line x1="0" y1="280" x2="1000" y2="280" stroke="#30363D" stroke-width="1" />
+  
+  <!-- Moon -->
+  <circle cx="200" cy="80" r="16" fill="#F9E79F" />
+  <circle cx="206" cy="76" r="16" fill="#0E1222" />
+  
+  <!-- Stars -->
+  <circle cx="100" cy="50" r="1" fill="#FFFFFF" opacity="0.5" />
+  <circle cx="300" cy="120" r="1.5" fill="#FFFFFF" opacity="0.5" />
+  <circle cx="500" cy="40" r="1" fill="#FFFFFF" opacity="0.5" />
+  <circle cx="700" cy="90" r="2" fill="#FFFFFF" opacity="0.5" />
+  <circle cx="850" cy="60" r="1" fill="#FFFFFF" opacity="0.5" />
+  
+  <!-- Sample Buildings -->
+  <rect x="300" y="180" width="14" height="100" fill="url(#building)" stroke="#30363D" stroke-width="0.5" rx="1" ry="1"/>
+  <rect x="303" y="260" width="2.5" height="4" fill="#26A641" rx="0.5" />
+  <rect x="305.5" y="260" width="2.5" height="4" fill="#26A641" rx="0.5" />
+  
+  <rect x="320" y="150" width="14" height="130" fill="url(#building)" stroke="#30363D" stroke-width="0.5" rx="1" ry="1"/>
+  <rect x="323" y="260" width="2.5" height="4" fill="#39D353" rx="0.5" />
+  <rect x="325.5" y="260" width="2.5" height="4" fill="#39D353" rx="0.5" />
+  
+  <rect x="340" y="220" width="14" height="60" fill="url(#building)" stroke="#30363D" stroke-width="0.5" rx="1" ry="1"/>
+  <rect x="343" y="270" width="2.5" height="4" fill="#006D32" rx="0.5" />
+  
+  <rect x="360" y="200" width="14" height="80" fill="url(#building)" stroke="#30363D" stroke-width="0.5" rx="1" ry="1"/>
+  <rect x="363" y="265" width="2.5" height="4" fill="#26A641" rx="0.5" />
+  
+  <rect x="380" y="160" width="14" height="120" fill="url(#building)" stroke="#30363D" stroke-width="0.5" rx="1" ry="1"/>
+  <rect x="383" y="260" width="2.5" height="4" fill="#39D353" rx="0.5" />
+  
+  <!-- Footer -->
+  <text x="300" y="330" class="text-title">🏙 My Coding City</text>
+  <rect x="440" y="318" width="38" height="16" fill="#238636" fill-opacity="0.2" stroke="#238636" stroke-width="1" rx="8" />
+  <text x="459" y="330" class="live-tag" text-anchor="middle">LIVE</text>
+  
+  <text x="300" y="348" class="text-subtitle">A city that grows with my contributions</text>
+  
+  <text x="600" y="330" class="text-legend">Less activity</text>
+  <rect x="665" y="322" width="9" height="9" fill="#161B22" rx="2" />
+  <rect x="677" y="322" width="9" height="9" fill="#0E4429" rx="2" />
+  <rect x="689" y="322" width="9" height="9" fill="#006D32" rx="2" />
+  <rect x="701" y="322" width="9" height="9" fill="#26A641" rx="2" />
+  <rect x="713" y="322" width="9" height="9" fill="#39D353" rx="2" />
+  <text x="730" y="330" class="text-legend">More activity</text>
+  
+  <text x="300" y="375" class="text-legend">Each building represents a week (6 months). Each window represents a day.</text>
+  <text x="300" y="388" class="text-legend">The brighter the window, the more commits that day.</text>
+</svg>
