@@ -5,6 +5,18 @@
 
 ---
 
+# 🏙️ My Coding City
+
+<p align="center">
+  <img src="./assets/city/skyline.svg" width="100%" alt="GitHub Coding City"/>
+</p>
+
+<p align="center">
+A city that grows with every contribution.
+</p>
+
+---
+
 <!-- GitHub Metrics -->
 <p align="center">
   <img src="./metrics.base.svg" width="49%" />
