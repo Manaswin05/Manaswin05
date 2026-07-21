@@ -18,70 +18,32 @@ jobs:
           fetch-depth: 0
 
       - name: Base Stats
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@master
         with:
           filename: metrics.base.svg
-          user: Manaswin05
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, activity, community, repositories, metadata
 
       - name: Languages
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@master
         with:
           filename: metrics.languages.svg
-          user: Manaswin05
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_languages: yes
-          plugin_languages_ignored: >-
-            html, css, tex, less, dockerfile, makefile
+          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile
           plugin_languages_limit: 8
           plugin_languages_details: lines, percentage
           plugin_languages_sections: most-used
 
       - name: Isometric Calendar
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@master
         with:
           filename: metrics.isocalendar.svg
-          user: Manaswin05
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-
-      - name: Activity Graph
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.activity.svg
-          user: Manaswin05
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-
-      - name: Topics
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.topics.svg
-          user: Manaswin05
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_topics: yes
-          plugin_topics_limit: 15
-          plugin_topics_mode: icons
-
-      - name: Notable Contributions
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.notable.svg
-          user: Manaswin05
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_notable: yes
-          plugin_notable_from: all
-          plugin_notable_types: commit, pull_request, issue
 
       - name: Commit and push changes
         run: |
