@@ -37,7 +37,6 @@ A city that grows with every contribution.
 
 ---
 
-<!-- Profile Views Counter -->
-<p align="center">
+<!-- Profile Views Counter --><p align="center">
   <img src="https://komarev.com/ghpvc/?username=Manaswin05&style=for-the-badge&color=5BCDEC&label=PROFILE+VIEWS" alt="Profile Views" />
 </p>
